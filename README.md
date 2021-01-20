@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## How to recreate development environment on another device (in dutch)
+- clone repo (bijvoorbeeld met github desktop, gitkraken, oid)
+- maak een nieuwe lege database
+- gebruik .env.example om een nieuwe .env te maken en configureer .env
+- composer install (om de vendor map te vullen met dependencies)
+- npm install & npm run dev (om benodigdheden voor de ingebouwde login/register screens in /public te zetten)
+- php artisan migrate  (om database tabellen te maken)
+- nu kun je applicatie gebruiken via http://localhost of waar je je site ook hebt neergezet. gebruik zo nodig php artisan serve vanuit je terminal, dan kun je via http://localhost:8000 ook bij je applicatie.
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
